@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="pokemon_bulbizarre.css" />
+    <title>Bulbizarre — #001</title>
+  </head>
+  <body>
+
+    <div class="bg-top">
+      <header>
+        <a class="btn-icon" href="pokedex2.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" width="20" height="20">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </a>
+        <span class="header-label">#001</span>
+        <button class="btn-icon fav-btn" id="favBtn" aria-label="Ajouter aux favoris">♥</button>
+      </header>
+
+      <section class="hero">
+        <img class="pokeball-deco" src="PokeBall_icon.svg" alt="" aria-hidden="true" />
+        <h1>Bulbizarre</h1>
+        <ul class="type-list">
+          <li class="type-badge">Plante</li>
+          <li class="type-badge">Poison</li>
+        </ul>
+      </section>
+
+      <div class="sprite-zone">
+        <img class="sprite" src="images/001.png" alt="Bulbizarre" />
+      </div>
+    </div>
+
+    <main class="card">
+      <div class="card-grip"></div>
+
+      <nav class="tabs">
+        <button class="tab active" onclick="showTab('description', this)">Description</button>
+        <button class="tab" onclick="showTab('statistiques', this)">Statistiques</button>
+        <button class="tab" onclick="showTab('evolution', this)">Évolution</button>
+      </nav>
+
+      <!-- Description -->
+      <div id="description" class="tab-content active">
+        <p class="desc-text">
+          Au début de sa vie, il se nourrit des nutriments accumulés dans la graine
+          sur son dos. Cela lui permet de grandir.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Catégorie</span>
+            <span class="info-value">Graine</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Taille</span>
+            <span class="info-value">0,7 m</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Poids</span>
+            <span class="info-value">6,9 kg</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Talent</span>
+            <span class="info-value">Engrais</span>
+          </div>
+        </div>
+
+        <div class="audio-wrap">
+          <span class="audio-label">🔊 Cri de Bulbizarre</span>
+          <audio id="cry" src="bulbizarre.mp3" controls preload="auto"></audio>
+        </div>
+      </div>
+
+      <!-- Statistiques -->
+      <div id="statistiques" class="tab-content">
+        <div class="stats">
+          <div class="stat-row">
+            <span class="stat-name">PV</span>
+            <span class="stat-val">45</span>
+            <div class="stat-bar"><div class="stat-fill" style="width:30%"></div></div>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Attaque</span>
+            <span class="stat-val">49</span>
+            <div class="stat-bar"><div class="stat-fill" style="width:33%"></div></div>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Défense</span>
+            <span class="stat-val">45</span>
+            <div class="stat-bar"><div class="stat-fill" style="width:30%"></div></div>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Att. Spé.</span>
+            <span class="stat-val">65</span>
+            <div class="stat-bar"><div class="stat-fill" style="width:43%"></div></div>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Déf. Spé.</span>
+            <span class="stat-val">65</span>
+            <div class="stat-bar"><div class="stat-fill" style="width:43%"></div></div>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">Vitesse</span>
+            <span class="stat-val">45</span>
+            <div class="stat-bar"><div class="stat-fill" style="width:30%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Évolution -->
+      <div id="evolution" class="tab-content">
+        <div class="evo-chain">
+          <div class="evo-item current">
+            <div class="evo-img-wrap">
+              <img src="images/001.png" alt="Bulbizarre" />
+            </div>
+            <span class="evo-num">#001</span>
+            <strong class="evo-name">Bulbizarre</strong>
+          </div>
+
+          <div class="evo-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              width="18" height="18">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+            <span>Niv. 16</span>
+          </div>
+
+          <div class="evo-item">
+            <a href="pokemon_herbizarre.html">
+              <div class="evo-img-wrap">
+                <img src="images/002.png" alt="Herbizarre" />
+              </div>
+              <span class="evo-num">#002</span>
+              <strong class="evo-name">Herbizarre</strong>
+            </a>
+          </div>
+
+          <div class="evo-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              width="18" height="18">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+            <span>Niv. 32</span>
+          </div>
+
+          <div class="evo-item">
+            <div class="evo-img-wrap">
+              <img src="images/003.png" alt="Florizarre" />
+            </div>
+            <span class="evo-num">#003</span>
+            <strong class="evo-name">Florizarre</strong>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function showTab(tabName, el) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        el.classList.add('active');
+        document.getElementById(tabName).classList.add('active');
+      }
+
+      document.getElementById('favBtn').addEventListener('click', function () {
+        this.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
